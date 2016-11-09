@@ -1,0 +1,5 @@
+/node_modules
+/.idea
+/src/client/public
+src/client/public/bundle.js
+src/client/public/bundle.js.map
