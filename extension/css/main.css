@@ -1,0 +1,182 @@
+html,
+body {
+    margin: 0;
+    font: normal normal normal 12px/1 'Oxygen', sans-serif;
+}
+
+
+h1, h2{
+    font: normal small-caps normal 40px/1 'Oxygen', sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.button {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px grey;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(176,196,222,0.3);
+}
+
+.button:active {
+    box-shadow: initial;
+}
+
+#enable-ds {
+    width: 80px;
+}
+
+.hidden {
+    display: none;
+}
+
+.ds-options-panel {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px 5px;
+}
+
+#qab-logo span{
+    font: normal small-caps normal 32px/1 'Oxygen', sans-serif;
+}
+
+#enable-qab {
+    width: 90px;
+    margin-bottom: 10px;
+    border: 0px;
+}
+
+#spinnerContainer {
+    width: 240px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#spinnerContainer.hidden {
+    display: none;
+}
+
+#spinner {
+    width: 60px;
+    height: 60px;
+    background: no-repeat center/100% url(../resources/spinner.svg);
+    animation: spin 1.5s steps(3) infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+#not-wix {
+    width: 240px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#not-wix p {
+    font-size: 32px;
+    text-align: center;
+}
+
+#ds-enabler {
+    box-sizing: border-box;
+    width: 240px;
+    height: 120px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ds-enabler p {
+    font-size: 20px;
+    margin: 0;
+}
+
+#popup-root {
+    width: 480px;
+    height: 600px;
+    display: flex;
+}
+
+#ds-options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 1px;
+    flex-grow: 1;
+}
+
+.toggle {
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.toggle i {
+    margin-right: 6px;
+    transform: translateY(1px);
+}
+
+.controlBox {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+    margin: 5px 0;
+    padding-left: 10px;
+}
+
+.controlBox .button {
+    margin-left: 10px;
+}
+
+.controlBox span {
+    flex-basis: 60px;
+}
+
+.spacer {
+    text-align: center;
+    width: 80%;
+    border-bottom: 1px solid;
+    margin: 10px 0;
+}
+
+.v-spacer {
+    height: 100%;
+    width: 0;
+    border-left: 1px solid;
+    margin: 0 10px;
+}
+
+.qr-frame {
+    width: 150px;
+    height: 150px;
+    mix-blend-mode: screen;
+}
+
+.qr-frame-container {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}

@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "DS Helper",
+  "description": "Utilise document services on a wix website",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["contentScripts/mainContentScript.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
